@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+
+/* CONTAINER */
+
+/* HEADER */
+header {
+    min-height: 100vh;
+    background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+        url(img/hero-bcg.jpeg) center/cover no-repeat;
+        
+}
+
+/* NAVBAR */
+.navbar {
+    height: 82px;
+    padding: 16px 24px;
+}
+.nav-center{
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.fixed-nav .nav-center .nav .nav-item .nav-link{
+    color: #102a42;
+    transition: all 0.3s linear;
+}
+.fixed-nav .nav-center .nav .nav-item .nav-link:hover{
+    color: #40cfd4;
+}
+.navbar-logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-logo img {
+    width: 50px;
+    height: 50px;
+}
+.nav {
+    display: flex;
+    align-items: center;
+}
+.nav-link {
+    margin: 0 16px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+.btn-menu {
+    display: none;
+    font-size: 24px;
+    color: #000;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.btn-menu:hover {
+    color: #40cfd4;
+}
+
+/* BANNER */
+.banner {
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-wrapper {
+    width: 640px;
+    text-align: center;
+    padding: 0 15px;
+}
+.banner-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 64px;
+    line-height: 64px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+.banner-text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.banner-link {
+    background-color: transparent;
+    color: #fff;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+    font-size: 14px;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border: 2px solid #fff;
+    outline: none;
+    transition: all 0.3s linear;
+}
+.banner-link:hover {
+    color: #40cfd4;
+    background-color: #fff;
+}
+
+/* ABOUT US */
+.about-us,
+.featured,
+.services {
+    height: 1000px;
+    background-color: #f1f5f8;
+    padding-bottom: 84px;
+}
+.title {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 40px;
+    color: #102a42;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.title span {
+    color: #40cfd4;
+}
+
+/* SERVICES */
+.services{
+    background-color: #fff;
+}
+
+/* FEATURED */
+.featured {
+    background-color: #f1f5f8;
+}
+
+/* FOOTER */
+footer{
+    height: 184px;
+    background-color: #102A42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+}
+
+/* MEDIA 800 */
+@media screen and (max-width: 800px) {
+    .navbar {
+        background-color: #fff;
+        height: auto !important;
+    }
+    .nav-center{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        
+        
+    }
+    .navbar-logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+    }
+    .btn-menu {
+        display: block;
+    }
+    .nav {
+        display: block;
+        width: 100%;
+        height: 0;
+        transition: all 0.3s linear;
+        overflow: hidden;
+    }
+    .nav-link {
+        display: block;
+        color: #617d98;
+        padding: 12px 0;
+        margin: 0;
+        line-height: 26px;
+    }
+    .menu-active {
+        height: 200px;
+    }
+    .banner-title {
+        font-size: 48px;
+    }
+    .banner-text {
+        font-size: 14px;
+    }
+}
